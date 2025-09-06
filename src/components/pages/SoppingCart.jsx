@@ -27,7 +27,7 @@ function SoppingCart() {
         <h3>Total : {state.total} $</h3>
         <h3>selected items : {state.ItemsCounter || "0"} Item</h3>
         <h3>status : {!state.checkOut ? "UnPaid" : "Paid"}</h3>
-       <button onClick={payHandler} disabled={state.selectedItems.length === 0 || state.checkOut}>Pay</button>
+       <button className={styles.paybutton} onClick={payHandler} disabled={state.selectedItems.length === 0 || state.checkOut}>Pay</button>
       </div>
     </div>
   )

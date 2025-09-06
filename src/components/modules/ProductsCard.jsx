@@ -26,8 +26,8 @@ function ProductsCard({
         <p>
           {rating.rate} of 5<FaStar color="gold" />
         </p>
-        <Buttons quantity={quantity} product={product} dispatch={dispatch} />
       </div>
+        <Buttons quantity={quantity} product={product} dispatch={dispatch} />
             <Link key={product.id} to={`/details/${product.id}`}>
               <button className={styles.morebutton}>More</button>
             </Link>
