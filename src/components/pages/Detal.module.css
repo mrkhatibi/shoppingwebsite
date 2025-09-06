@@ -1,0 +1,25 @@
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  display: flex;
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(128, 128, 128, 0.548);
+  justify-content: space-around;
+}
+
+.details{
+    max-width: 600px;
+}
+.container img {
+    max-width: 300px;
+}
+
+@media (max-width : 1046px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    align-items: center;
+  }
+}
